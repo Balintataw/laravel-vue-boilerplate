@@ -13,3 +13,5 @@
 
 // Routes everything through spa controller
 Route::get('/{any}', 'SinglePageController@index')->where('any', '.*');
+
+Route::post('/admin/login', 'Admin\AdminAuthController@login');

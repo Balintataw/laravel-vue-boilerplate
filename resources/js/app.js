@@ -5,6 +5,7 @@ import VeeValidate from 'vee-validate'
 
 // Route interface for Vue Router
 import Routes from '@/js/routes';
+import Store  from '@/js/store';
 
 // Component File app entry point
 import App from '@/js/views/App';
@@ -25,6 +26,7 @@ Vue.use(Vuetify, {
 const app = new Vue({
     el: '#app',
     router: Routes,
+    store: Store,
     render: h => h(App),
 });
 
